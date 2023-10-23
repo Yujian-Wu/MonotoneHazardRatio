@@ -17,7 +17,7 @@ library(twostageTE)
 
 ## Usage
 
-It is staightforward to use this package. First you need to import the data (optional: split the data into two groups "f" and "g" such that the hazard ratio "f / g" is non-decreasing). Then pass the dataframes along with the evaluation grid to the function `monotoneHR()`, which takes $\alpha =0.05$ as the default confidence level. Then you will have your hazard ratio and confidence intervals estimated.
+It is staightforward to use this package. First you need to import the data (optional: split the data into two groups "f" and "g" such that the hazard ratio $f/g$ is non-decreasing). Pass the dataframes along with the evaluation grid to the function `monotoneHR()`, which takes $\alpha =0.05$ as the default confidence level, to have the hazard ratio and its confidence intervals estimated.
 
 ## Example
 
