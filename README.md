@@ -17,7 +17,7 @@ library(twostageTE)
 
 ## Usage
 
-It is staightforward to use this package. First you need to import the data (optional: split the data into two groups "f" and "g" such that the hazard ratio $f/g$ is non-decreasing). Pass the dataframes along with the evaluation grid to the function `monotoneHR()`, which takes $\alpha =0.05$ as the default confidence level, to have the hazard ratio and its confidence intervals estimated.
+It is staightforward to use this package. First you need to import the data (optional: split the data into two groups "S" and "T" such that the hazard ratio $\lambda_S/\lambda_T$ is non-decreasing). Pass the dataframes along with the evaluation grid to the function `monotoneHR()`, which takes $\alpha =0.05$ as the default confidence level, to have the hazard ratio and its confidence intervals estimated.
 
 ## Example
 
@@ -26,7 +26,8 @@ Here is an example with some data available [here](https://github.com/YujianWu20
 ```
 library(MonotoneHazardRatio)
 
-### import your data as df
+### Use the example data in the package
+data(survData)
 
 ### split it into two dataframes
 f.data <- df[df$group == 'S']
