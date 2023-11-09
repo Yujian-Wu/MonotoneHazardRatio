@@ -26,12 +26,16 @@ Here is an example with some data available [here](https://github.com/YujianWu20
 ```
 library(MonotoneHazardRatio)
 
+<<<<<<< HEAD
 ### Use the example data in the package
 data(survData)
+=======
+### import your data as survData
+>>>>>>> 05f1dd32fa1ae5c86466dc1892ca64b81054910d
 
 ### split it into two dataframes
-f.data <- df[df$group == 'S']
-g.data <- df[df$group == 'T']
+f.data <- survData[survData$group == 'S']
+g.data <- survData[survData$group == 'T']
 
 ### Evaluation grid
 t.grid <- seq(0, 10, 1)
