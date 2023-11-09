@@ -29,8 +29,6 @@ library(MonotoneHazardRatio)
 ### Use the example data in the package
 data(survData)
 
-### import your data as survData
-
 ### split it into two dataframes
 f.data <- survData[survData$group == 'S']
 g.data <- survData[survData$group == 'T']
