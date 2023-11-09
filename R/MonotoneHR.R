@@ -28,7 +28,6 @@
 #' @param T.data A dataframe containing observed survival time and censoring, it corresponds to the hazard function on the demoninator
 #' @param ci.lvl A number that specify the confidence level \eqn{\alpha}. Default is 0.05.
 #' @import stats
-#' @import kedd
 #' @import KernSmooth
 #' @import twostageTE
 #' @import utils
@@ -67,8 +66,8 @@ monotoneHR <- function(time.grid, S.data, T.data, ci.lvl=0.05){
   smooth.y <- sapply(smooth.x, function(x) ifelse(x < min(left.deriv.time), 0, left.deriv[min(which(left.deriv.time >= x))]))
 
   # direct derivative estimation from primitive functions (with kernel smoothing)
-  prim.drv.ker <- dkde(smooth.x, smooth.y, deriv.order = 1, kernel = 'gaussian')
-  prim.drv.fit <- locpoly(smooth.x, smooth.y, bandwidth = prim.drv.ker$h, drv = 1)
+  prim.drv.ker <- dpill(smooth.x, smooth.y)
+  prim.drv.fit <- locpoly(smooth.x, smooth.y, bandwidth = prim.drv.ker, drv = 1)
 
   prim.drv.ker.indices <- unlist(sapply(mapped.t, function(x) which.min(abs(prim.drv.fit$x - x))))
   mapped.drv <- prim.drv.fit$y[prim.drv.ker.indices]

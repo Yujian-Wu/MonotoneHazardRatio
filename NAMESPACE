@@ -3,7 +3,6 @@
 export(monotoneHR)
 import(KernSmooth)
 import(fdrtool)
-import(kedd)
 import(stats)
 import(survival)
 import(twostageTE)

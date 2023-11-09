@@ -13,7 +13,6 @@ Description: This package provides nonparametrical estimation and inference for 
 License: MIT + file LICENSE
 Imports: 
     fdrtool,
-    kedd,
     KernSmooth,
     survival,
     twostageTE
