@@ -6,11 +6,10 @@ MonotoneeHazardRatio is a tool for nonparametric estimation and inference of a m
 
 ## Dependent packages
 
-Our packages needs the following packages to work. For `kedd` package, you need to install it from the github repo with devtools, i.e., `devtools::install_github("https://github.com/cran/kedd")`, while the rest packages can be installed directly from CRAN.
+Our packages needs the following packages to work. 
 ```
 library(survival)
 library(fdrtool)
-library(kedd)
 library(KernSmooth)
 library(twostageTE)
 ```

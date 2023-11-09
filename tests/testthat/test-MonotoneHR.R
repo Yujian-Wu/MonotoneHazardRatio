@@ -1,7 +1,6 @@
 test_that("function works", {
   library(survival)
   library(fdrtool)
-  library(kedd)
   library(KernSmooth)
   library(twostageTE)
 
