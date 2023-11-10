@@ -20,7 +20,7 @@ It is staightforward to use this package. First you need to import the data (opt
 
 ## Example
 
-Here is an example with some data available [here](https://github.com/YujianWu2008/MonotoneHazardRatio/blob/main/example.csv). The estimated hazard ratio is stored in `theta$hr`, while the confidence intervals are stored in `theta$ci.lower` and `theta$ci.upper`. 
+As shown in the example, we are going to estimate a non-decreasing hazard ratio using the example data `survData`. The estimated hazard ratio is stored in `theta$hr`, while the confidence intervals are stored in `theta$ci.lower` and `theta$ci.upper`. 
 
 ```
 library(MonotoneHazardRatio)
