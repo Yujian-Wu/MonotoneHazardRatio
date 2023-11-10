@@ -130,3 +130,7 @@ gcm.unique <- function(x, y){
   logcm <- gcmlcm(x.unique, y.unique, type = 'gcm')
   return(logcm)
 }
+
+
+person(c(person(given = "Yujian", family = "Wu", role = c("aut", "cre"), email = "yujianwu@umass.edu", comment = c(ORCID = "0000-0001-9163-6773")),
+         c(person(given = "Ted", family = "Westling", role = c("ths"), email = "twestling@umass.edu", comment = c(ORCID = "0000-0002-3362-1378")))))

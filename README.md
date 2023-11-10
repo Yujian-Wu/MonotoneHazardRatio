@@ -2,7 +2,7 @@
 
 ## Overview
 
-MonotoneeHazardRatio is a tool for nonparametric estimation and inference of a monotone non-decreasing hazard ratio, based on the [study](https://arxiv.org/abs/2205.01745#:~:text=Abstract%3A%20The%20ratio%20of%20the,time%2Dto%2Devent%20analysis.) by Y. Wu and T. Westling. 
+MonotoneeHazardRatio is a tool for nonparametric estimation and inference of a monotone non-decreasing hazard ratio, based on the work "Nonparametric inference under a monotone hazard ratio order" by Y. Wu and T. Westling (2022) <arXiv:2205.01745>.
 
 ## Dependent packages
 
