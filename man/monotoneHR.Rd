@@ -26,5 +26,17 @@ monotoneHR(time.grid, S.data, T.data, ci.lvl = 0.05)
 Estimate a non-decreasing hazard ratio function, together with a 100(1-\eqn{\alpha})\% confidence interval
 }
 \examples{
-#'
+# load the example data
+data(survData)
+# load the computed Chernoff distribution
+data("chernoff_realizations")
+# split the data into two groups S and T, make sure that the column of survival time
+# is named as "time", and the column of censoring named as "status" (0 as being censored)
+s.data <- survData[survData$group == 'S',]
+t.data <- survData[survData$group == 'T',]
+# define the evaluation grid on which the hazard ratio function is to be computed
+t.grid <- seq(0, 10, 1)
+# estimation and inference of the non-decreasing hazard ratio (defined as
+#\eqn{\lambda_S}/\eqn{\lambda_T}, where \eqn{\lambda} is the hazard function) function
+theta <- monotoneHR(t.grid, s.data, t.data)
 }
