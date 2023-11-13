@@ -1,7 +1,7 @@
 Type: Package
 Package: MonotoneHazardRatio
 Title: Nonparametric Estimation and Inference of a Monotone Hazard Ratio Function
-Version: 0.1.1
+Version: 0.1.2
 Author: Yujian Wu
 Maintainer: Yujian Wu <yujianwu@umass.edu>
 Description: A tool for nonparametric estimation and inference of a non-decreasing monotone hazard

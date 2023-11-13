@@ -2,7 +2,7 @@
 
 ## Overview
 
-MonotoneeHazardRatio is a tool for nonparametric estimation and inference of a monotone non-decreasing hazard ratio, based on the work "Nonparametric inference under a monotone hazard ratio order" by Y. Wu and T. Westling (2022) <arXiv:2205.01745>.
+MonotoneeHazardRatio is a tool for nonparametric estimation and inference for a monotone non-decreasing hazard ratio, based on the work "Nonparametric inference under a monotone hazard ratio order" by Y. Wu and T. Westling (2022) <arXiv:2205.01745>.
 
 ## Dependent packages
 
@@ -29,12 +29,12 @@ library(MonotoneHazardRatio)
 data(survData)
 
 ### split it into two dataframes
-f.data <- survData[survData$group == 'S']
-g.data <- survData[survData$group == 'T']
+s.data <- survData[survData$group == 'S']
+t.data <- survData[survData$group == 'T']
 
 ### Evaluation grid
 t.grid <- seq(0, 10, 1)
 
 ### Estimation and inference
-theta <- monotoneHR(t.grid, f.data, g.data)
+theta <- monotoneHR(t.grid, s.data, t.data)
 ```
