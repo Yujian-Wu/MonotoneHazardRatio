@@ -11,7 +11,6 @@ Our packages needs the following packages to work.
 library(survival)
 library(fdrtool)
 library(KernSmooth)
-library(twostageTE)
 ```
 
 ## Usage
