@@ -1,3 +1,5 @@
+# MonotoneHazardRatio 0.2.0
+
 # MonotoneHazardRatio 0.1.1
 
 # MonotoneHazardRatio 0.1.2
