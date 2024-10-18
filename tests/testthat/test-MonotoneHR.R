@@ -2,7 +2,6 @@ test_that("function works", {
   library(survival)
   library(fdrtool)
   library(KernSmooth)
-  library(twostageTE)
 
   data("chernoff_realizations")
 

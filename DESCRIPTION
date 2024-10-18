@@ -9,7 +9,7 @@ Description: A tool for nonparametric estimation and inference of a non-decreasi
     estimator is based on a generalized Grenander typed estimator, and the
     inference procedure relies on direct plugin estimation of a first order derivative.  More
     details please refer to the paper "Nonparametric inference under a monotone
-    hazard ratio order" by Y. Wu and T. Westling (2022) <arXiv:2205.01745>.
+    hazard ratio order" by Y. Wu and T. Westling (2023).
 License: MIT + file LICENSE
 Imports: 
     fdrtool,

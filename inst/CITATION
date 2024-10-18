@@ -1,0 +1,11 @@
+bibentry(
+  bibtype  = "Article",
+  title    = "Nonparametric inference under a monotone hazard ratio order",
+  author   = "Yujian Wu, Ted Westling",
+  journal  = "Electronic Journal of Statistics",
+  year     = 2023,
+  volume   = 17,
+  number   = 2,
+  pages    = 3181-3225,
+  doi      = 10.1214/23-EJS2173
+)
